@@ -5,4 +5,5 @@ class Sprite(pygame.sprite.Sprite):
         super().__init__(groups)
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
         self.image.fill('white')
-        self.rect = self.image.get_frect(topleft = pos) # floating point rectangle (more precise)
+        self.rect = self.image.get_frect(topleft = pos) # floating point rectangle (more precise) -> used to
+        # create an object for the sprite, whicj represents the positions and size of the sprite
