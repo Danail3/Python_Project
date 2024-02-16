@@ -7,3 +7,4 @@ class Sprite(pygame.sprite.Sprite):
         self.image.fill('white')
         self.rect = self.image.get_frect(topleft = pos) # floating point rectangle (more precise) -> used to
         # create an object for the sprite, whicj represents the positions and size of the sprite
+        self.old_rect = self.rect.copy()
